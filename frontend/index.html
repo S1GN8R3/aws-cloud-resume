@@ -22,6 +22,7 @@
 <ul class="nav" id="nav">
 <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
 <li><a class="smoothscroll" href="#about">About</a></li>
+<li><a class="smoothscroll" href="#architecture">Architecture</a></li>
 <li><a class="smoothscroll" href="#resume">Resume</a></li>
 <li><a class="smoothscroll" href="#education">Education</a></li>
 <li><a href="https://www.linkedin.com/in/tzac" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
@@ -61,6 +62,47 @@
 <p style="font-size: 1.2em; color: #ffffff;">I'm Zac Stevens, a retired U.S. Marine Corps Chief Warrant Officer with more than 20 years of experience leading technical teams, managing operational risk, and delivering cybersecurity capabilities. My career spans defensive cyberspace operations, nation-state investigations, and technical program management at Microsoft. I specialize in navigating ambiguity, connecting technical and executive stakeholders, and driving complex initiatives forward. This website also showcases my hands-on learning through the Cloud Resume Challenge, using Azure and AWS serverless services, security controls, and deployment automation.</p>
 </div>
 </div>
+</section>
+<section id="architecture" style="background: #f5f5f5; padding: 65px 20px;">
+  <div class="row">
+    <div class="twelve columns" style="text-align: center;">
+
+      <h2 style="color: #222; margin-bottom: 15px;">
+        MULTICLOUD ARCHITECTURE
+      </h2>
+
+      <p style="color: #555; font-size: 1.15em; max-width: 850px; margin: 0 auto 30px;">
+        Two cloud platforms, one portfolio. Explore my hands-on
+        Cloud Resume Challenge implementations using Microsoft Azure
+        and Amazon Web Services, with automated deployments through GitHub Actions.
+      </p>
+
+      <a class="architecture-popup"
+         href="images/multicloud-architecture.png"
+         title="Azure and AWS Cloud Resume Architecture">
+        <img src="images/multicloud-architecture.png"
+             alt="Multicloud architecture diagram showing Azure and AWS resume deployments"
+             loading="lazy"
+             style="width: 100%; max-width: 1050px; height: auto; border-radius: 8px; cursor: zoom-in;" />
+      </a>
+
+      <p style="margin-top: 25px;">
+        <a href="https://www.tzac.cloud" target="_blank" rel="noopener noreferrer">
+          View Azure Resume
+        </a>
+        &nbsp; | &nbsp;
+        <a href="https://aws.tzac.cloud" target="_blank" rel="noopener noreferrer">
+          View AWS Resume
+        </a>
+        &nbsp; | &nbsp;
+        <a href="https://github.com/S1GN8R3/aws-cloud-resume"
+           target="_blank" rel="noopener noreferrer">
+          AWS GitHub Repository
+        </a>
+      </p>
+
+    </div>
+  </div>
 </section>
 <section id="resume">
 <!-- Clearance -->
@@ -189,5 +231,17 @@
 <script src="js/magnific-popup.js"></script>
 <script src="js/init.js"></script>
 <script src="js/main.js"></script>
+<script>
+jQuery(function ($) {
+    $('.architecture-popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+            verticalFit: true
+        }
+    });
+});
+</script>
 </section></body>
 </html>
